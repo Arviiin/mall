@@ -1,0 +1,8 @@
+package cn.e3mall.service.impl;
+
+import com.alibaba.dubbo.config.annotation.Service;
+
+@Service
+public class ItemCatServiceImpl {
+
+}

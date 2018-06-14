@@ -1,0 +1,14 @@
+package cn.e3mall.service.impl;
+
+import cn.e3mall.pojo.TbItem;
+import cn.e3mall.service.ItemService;
+
+public class ItemServiceImpl implements ItemService {
+
+	@Override
+	public TbItem getItemById(Long itemId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

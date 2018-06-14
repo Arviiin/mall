@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>cn.e3mall</groupId>
+    <artifactId>e3-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>cn.e3mall</groupId>
+  <artifactId>e3-manager</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  
+  <dependencies>
+  	  <dependency>
+  	  	 <groupId>cn.e3mall</groupId>
+	     <artifactId>e3-common</artifactId>
+	     <version>0.0.1-SNAPSHOT</version>
+  	  </dependency>
+  </dependencies>
+  <modules>
+  	<module>e3-manager-pojo</module>
+  	<module>e3-manager-dao</module>
+  	<module>e3-manager-interface</module>
+  	<module>e3-manager-service</module>
+  	<!-- <module>e3-manager-web</module> --><!-- 拆分成面向服务的架构，web独立和manager平级别，所以这句删除 -->
+  </modules>
+  
+  <!-- 建议运行这个聚合工程 -->
+  <!-- 配置tomcat插件 -->
+  <build>
+  	<plugins>
+  		<plugin>
+			<groupId>org.apache.tomcat.maven</groupId>
+			<artifactId>tomcat7-maven-plugin</artifactId>
+			<version>2.2</version><!-- 可以删掉此行，在父工程里已经定义好了 -->
+			<configuration>
+				<path>/</path>
+				<port>8080</port>
+			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+</project>
