@@ -41,12 +41,15 @@
 	        <tr>
 	            <td>商品图片:</td>
 	            <td>
+	            	 <!-- 后面的js(E3.init)用类选择器.picFileUpload找到a标签 -->
 	            	 <a href="javascript:void(0)" class="easyui-linkbutton picFileUpload">上传图片</a>
 	                 <input type="hidden" name="image"/>
+	                 <!-- 在common.js中对隐藏域input进行埋值传值处理 -->
 	            </td>
 	        </tr>
 	        <tr>
 	            <td>商品描述:</td>
+	            <!-- textarea多行编辑文本框,富文本编辑器的编辑区 ,编辑完随着表单提交出去-->
 	            <td>
 	                <textarea style="width:800px;height:300px;visibility:hidden;" name="desc"></textarea>
 	            </td>
@@ -70,7 +73,7 @@
 	//页面初始化完毕后执行此方法，可以看成js的main入口
 	//E3全局js对象，common.js里有。可以理解为静态类，直接调用函数
 	$(function(){
-		//创建富文本编辑器
+		//创建富文本编辑器                                                 #是id选择器,再找name=desc的子控件
 		itemAddEditor = E3.createEditor("#itemAddForm [name=desc]");
 		//初始化类目选择和图片上传器
 		E3.init({fun:function(node){
@@ -112,8 +115,12 @@
 		paramJson = JSON.stringify(paramJson);
 		$("#itemAddForm [name=itemParams]").val(paramJson);
 		*/
-		//ajax的post方式提交表单
+		
+		
+		
+		/* ajax的post方式请求地址/item/save提交表单 */
 		//$("#itemAddForm").serialize()将表单序列号为key-value形式的字符串
+		alert($("#itemAddForm").serialize());
 		$.post("/item/save",$("#itemAddForm").serialize(), function(data){
 			if(data.status == 200){
 				$.messager.alert('提示','新增商品成功!');

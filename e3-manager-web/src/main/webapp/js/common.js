@@ -64,8 +64,8 @@ var E3 = {
     },
     // 初始化图片上传组件
     initPicUpload : function(data){
-    	$(".picFileUpload").each(function(i,e){
-    		var _ele = $(e);
+    	$(".picFileUpload").each(function(i,e){//类选择器拿到a标签,这里循环的原因是可能多个页面都有这个功能,所以我把它都绑上事件.
+    		var _ele = $(e);//转成jQuery对象
     		_ele.siblings("div.pics").remove();
     		_ele.after('\
     			<div class="pics">\
@@ -87,14 +87,19 @@ var E3 = {
         		KindEditor.editor(E3.kingEditorParams).loadPlugin('multiimage',function(){
         			var editor = this;
         			editor.plugin.multiImageDialog({
-						clickFn : function(urlList) {
+						clickFn : function(urlList) {//图片全部插入
 							var imgArray = [];
-							KindEditor.each(urlList, function(i, data) {
+							KindEditor.each(urlList, function(i, data) {//图片url遍历一遍
 								imgArray.push(data.url);
+								
+								/*通过.pics ul找到上面增加的元素,增加内容_ele.after('\
+						    			<div class="pics">\
+						        			<ul></ul>\
+						        		</div>');*/
 								form.find(".pics ul").append("<li><a href='"+data.url+"' target='_blank'><img src='"+data.url+"' width='80' height='50' /></a></li>");
 							});
-							form.find("[name=image]").val(imgArray.join(","));
-							editor.hideDialog();
+							form.find("[name=image]").val(imgArray.join(","));//将url以逗号分隔,赋给name=image的隐藏域
+							editor.hideDialog();//窗口关闭
 						}
 					});
         		});
@@ -126,12 +131,14 @@ var E3 = {
     			    	$("ul",_win).tree({//对树初始化  用大括号相当于js对象，也是json
     			    		url:'/item/cat/list',//当窗口打开的时候就会发送一个请求localhost：8081/item/cat/list
     			    		animate:true,		//所以我们应该给它响应一个内容，json数据 
-    			    		onClick : function(node){
-    			    			if($(this).tree("isLeaf",node.target)){
-    			    				// 填写到cid中
+    			    		onClick : function(node){  //树形图里面的点击事件,
+    			    			if($(this).tree("isLeaf",node.target)){//如果点击的是叶子节点
+    			    				// 填写到cid中    可以知道_ele事实上就是 item-add.jsp中的a标签,通过类选择器.selectItemCat
+    			    				//拿到_ele.parent()再找到它的父节点<td>再找到其下name=cid的子控件<input,将其赋值
+    			    				//node.id.这样就把这个种类id埋在页面了
     			    				_ele.parent().find("[name=cid]").val(node.id);
-    			    				_ele.next().text(node.text).attr("cid",node.id);
-    			    				$(_win).window('close');
+    			    				_ele.next().text(node.text);//把内容显示到item-add.jsp中span里
+    			    				$(_win).window('close');//窗口关闭
     			    				if(data && data.fun){
     			    					data.fun.call(this,node);
     			    				}

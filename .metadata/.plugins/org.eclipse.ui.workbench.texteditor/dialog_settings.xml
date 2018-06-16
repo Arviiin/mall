@@ -2,22 +2,23 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="ClientGlobal" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="page"/>
-			<item value="com.taotao"/>
-			<item value="page_index"/>
-			<item value="totalPrice"/>
-			<item value="target=&quot;_blank&quot; "/>
-			<item value="苏丙伦"/>
-			<item value="我的交易"/>
-			<item value="taotao-item-web"/>
+			<item value="ClientGlobal"/>
+			<item value="conf"/>
+			<item value="initPicUpload"/>
+			<item value="commons-fileupload.version"/>
+			<item value="上传"/>
+			<item value="\"/>
+			<item value="ju"/>
+			<item value="juni"/>
 		</list>
 		<list key="replacehistory">
+			<item value="/"/>
 			<item value="cn.e3mall"/>
 			<item value=""/>
 			<item value="入云龙"/>
@@ -28,7 +29,7 @@
 		<item value="325" key="DIALOG_WIDTH"/>
 		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 		<item value="444" key="DIALOG_HEIGHT"/>
-		<item value="365" key="DIALOG_Y_ORIGIN"/>
-		<item value="743" key="DIALOG_X_ORIGIN"/>
+		<item value="164" key="DIALOG_Y_ORIGIN"/>
+		<item value="1375" key="DIALOG_X_ORIGIN"/>
 	</section>
 </section>

@@ -105,6 +105,13 @@
 		<version>${pagehelper.version}</version>
 	</dependency>
 	
+	
+	<!-- 文件上传组件 -->
+	<dependency>
+		<groupId>commons-fileupload</groupId>
+		<artifactId>commons-fileupload</artifactId>
+	</dependency>
+	
   </dependencies>
   
   <!-- 配置tomcat插件 -->
