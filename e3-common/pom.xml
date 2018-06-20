@@ -1,19 +1,20 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>cn.e3mall</groupId>
-    <artifactId>e3-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
-  <groupId>cn.e3mall</groupId>
-  <artifactId>e3-common</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  <!-- 只要依赖common则下面写的依赖都有了，这叫依赖的传递 -->
-  
-  <!-- 依赖的jar包 -->
-  <dependencies>
-  		<!-- 时间操作组件 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>cn.e3mall</groupId>
+		<artifactId>e3-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>cn.e3mall</groupId>
+	<artifactId>e3-common</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<!-- 只要依赖common则下面写的依赖都有了，这叫依赖的传递 -->
+
+	<!-- 依赖的jar包 -->
+	<dependencies>
+		<!-- 时间操作组件 -->
 		<dependency>
 			<groupId>joda-time</groupId>
 			<artifactId>joda-time</artifactId>
@@ -66,12 +67,23 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>${slf4j.version}</version>
 		</dependency>
-  
-  		<dependency>
+
+		<dependency>
 			<groupId>fastdfs_client</groupId>
-		    <artifactId>fastdfs_client</artifactId>
-	    <version>1.25</version>
-	    
-	</dependency>
-  </dependencies>
+			<artifactId>fastdfs_client</artifactId>
+			<version>1.25</version>
+		</dependency>
+
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+		</dependency>
+
+
+	</dependencies>
 </project>

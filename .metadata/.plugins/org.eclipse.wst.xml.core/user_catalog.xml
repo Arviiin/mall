@@ -12,4 +12,12 @@
   <public publicId="-//mybatis.org//DTD Mapper 3.0//EN" uri="file:///D:/传智播客/01.课程/05.电商项目/01.教案-2.1/01.参考资料/mybatis/mybatis3-dtd/mybatis-3-mapper.dtd"/>
   <public publicId="-//mybatis.org//DTD Config 3.0//EN" uri="file:///D:/传智播客/01.课程/05.电商项目/01.教案-2.1/01.参考资料/mybatis/mybatis3-dtd/mybatis-3-config.dtd"/>
   <system systemId="http://code.alibabatech.com/schema/dubbo/dubbo.xsd" uri="file:///G:/Code/JavaEEProject/XSD/dubbo.xsd"/>
+  <system systemId="http://www.springframework.org/schema/aop" uri="file:///G:/Code/JavaEEProject/XSD/spring-aop-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/beans" uri="file:///G:/Code/JavaEEProject/XSD/spring-beans-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/context" uri="file:///G:/Code/JavaEEProject/XSD/spring-context-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/jms" uri="file:///G:/Code/JavaEEProject/XSD/spring-jms-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/mvc" uri="file:///G:/Code/JavaEEProject/XSD/spring-mvc-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/tool" uri="file:///G:/Code/JavaEEProject/XSD/spring-tool-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/tx" uri="file:///G:/Code/JavaEEProject/XSD/spring-tx-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/util" uri="file:///G:/Code/JavaEEProject/XSD/spring-util-4.2.xsd"/>
 </catalog>

@@ -103,6 +103,10 @@
     </if>
   </delete>
   <insert id="insert" parameterType="cn.e3mall.pojo.TbContentCategory" >
+  	<!-- 主键返回,即:向数据库中插入数据后,返回自增长的主键 -->
+  	<selectKey keyProperty="id" resultType="long" order="AFTER">
+  		select last_insert_id()
+  	</selectKey>
     insert into tb_content_category (id, parent_id, name, 
       status, sort_order, is_parent, 
       created, updated)
@@ -111,6 +115,13 @@
       #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="cn.e3mall.pojo.TbContentCategory" >
+  	<!-- 主键返回,即:向数据库中插入数据后,返回自增长的主键 
+  	这里manager-dao修改过后需要运行maven install安装一下,
+  	运行manager不需要安装,可是运行content的时候,manager-dao不是
+  	content的模块,故需要在本地仓库找,不安装会报错-->
+  	<selectKey keyProperty="id" resultType="long" order="AFTER">
+  		select last_insert_id()
+  	</selectKey>
     insert into tb_content_category
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >

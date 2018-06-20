@@ -4,6 +4,7 @@
 <script type="text/javascript" charset="utf-8" src="/js/kindeditor-4.1.10/lang/zh_CN.js"></script>
 <div style="padding:10px 10px 10px 10px">
 	<form id="contentAddForm" class="itemForm" method="post">
+		<!-- 埋数据传出去 -->
 		<input type="hidden" name="categoryId"/>
 	    <table cellpadding="5">
 	        <tr>
@@ -55,9 +56,9 @@
 	$(function(){
 		contentAddEditor = E3.createEditor("#contentAddForm [name=content]");
 		E3.initOnePicUpload();
-		$("#contentAddForm [name=categoryId]").val($("#contentCategoryTree").tree("getSelected").id);
+		$("#contentAddForm [name=categoryId]").val($("#contentCategoryTree").tree("getSelected").id);//找到埋数据的节点为其赋值
 	});
-	
+	//onclick="contentAddPage.submitForm()" ,可以看出contentAddPage类似一个类,调用里面的静态方法,前面用的E3也是这样
 	var contentAddPage  = {
 			submitForm : function (){
 				if(!$('#contentAddForm').form('validate')){
@@ -65,7 +66,7 @@
 					return ;
 				}
 				contentAddEditor.sync();
-				
+													//$("#contentAddForm").serialize():将表中字段格式化成key value形式提交,用pojo接收,但是要求和input的name属性要要一致
 				$.post("/content/save",$("#contentAddForm").serialize(), function(data){
 					if(data.status == 200){
 						$.messager.alert('提示','新增内容成功!');

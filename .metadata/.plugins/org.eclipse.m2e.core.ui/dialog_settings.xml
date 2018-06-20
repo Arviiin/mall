@@ -5,21 +5,13 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="cn.e3mall"/>
-			<item value="com.taotao"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="e3-manager-web"/>
-			<item value="e3-manager"/>
-			<item value="e3-manager-service"/>
-			<item value="e3-manager-interface"/>
-			<item value="e3-manager-dao"/>
-			<item value="e3-manager-pojo"/>
-			<item value="e3-parent"/>
-			<item value="e3-common"/>
-			<item value="taotao-manager-interface"/>
-			<item value="taotao-manager"/>
+			<item value="e3-content-interface"/>
+			<item value="e3-content"/>
+			<item value="e3-content-service"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -76,6 +68,8 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="e3-content-interface"/>
+			<item value="e3-content-service"/>
 			<item value="e3-manager-web"/>
 			<item value="e3-manager-service"/>
 			<item value="e3-manager-interface"/>
@@ -107,13 +101,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="org.e3.manager.web"/>
+			<item value="org.e3.content.interface"/>
 		</list>
 		<list key="groupId">
 			<item value="cn.e3mall"/>
 		</list>
 		<list key="artifactId">
-			<item value="e3-manager-web"/>
+			<item value="e3-content-interface"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
