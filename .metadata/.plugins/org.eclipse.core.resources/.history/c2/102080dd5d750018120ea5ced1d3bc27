@@ -1,0 +1,14 @@
+package cn.e3mall.controller;
+
+/**
+ * 导入商品数据到索引库
+ * <p>Title: SearchItemController</p>
+ * <p>Description: </p>
+ * <p>Company: www.my.dhu.edu.cn</p>
+ * @author LongLong
+ * @data 2018年6月21日
+ * @version 1.0
+ */
+public class SearchItemController {
+
+}
