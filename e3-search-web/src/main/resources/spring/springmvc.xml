@@ -36,6 +36,9 @@
 		<property name="maxUploadSize" value="5242880"></property>
 	</bean> -->
 	
+	<!-- 配置全局异常处理器 -->
+	<bean class="cn.e3mall.search.controller.GlobalExceptionResolver"/>
+	
 	
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="e3-search-web"/>

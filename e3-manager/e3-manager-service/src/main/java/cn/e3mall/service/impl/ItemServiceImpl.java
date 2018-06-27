@@ -3,7 +3,11 @@ package cn.e3mall.service.impl;
 import java.util.Date;
 import java.util.List;
 
+import javax.annotation.Resource;
+import javax.jms.Destination;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
@@ -35,6 +39,17 @@ public class ItemServiceImpl implements ItemService {
 	
 	@Autowired
 	private TbItemDescMapper itemDescMapper;
+	
+	
+	@Autowired
+	private JmsTemplate jmsTemplate;//tomcat会初始化Spring容器,这里直接注入就可以了.注意在配置文件中配置bean和用@Service,@Repository等注解方式的区别.
+	
+	//这里就不能直接根据类型来取了,因为在配置文件applicationContext-activemq.xml中配置的ActiveMQQueue
+	//和ActiveMQTopic,都是Destination类型,这里我们用id取.所以就不用@Autowired,而用@Resource默认先用id再用类型
+	//这里就先用topicDestination来找有没有id是这个的bean,没有再根据类型找
+	@Resource
+	private Destination topicDestination;
+	
 	
 	
 	@Override
@@ -95,6 +110,9 @@ public class ItemServiceImpl implements ItemService {
 		itemDesc.setUpdated(new Date());
 		//向商品描述表插入数据
 		itemDescMapper.insert(itemDesc);
+		
+		//发送商品添加消息
+		
 		//返回成功
 		return E3Result.ok();
 	}

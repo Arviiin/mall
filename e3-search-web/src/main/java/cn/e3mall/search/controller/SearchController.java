@@ -39,6 +39,8 @@ public class SearchController {
 		model.addAttribute("recourdCount", searchResult.getRecordCount());
 		model.addAttribute("itemList", searchResult.getItemList());
 		
+	
+		
 		//返回逻辑视图
 		return "search";
 	}

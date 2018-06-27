@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.junit.launchconfig">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/e3-manager-service/src/test/java/e3/e3mall/publish/TestPublish.java"/>
+<listEntry value="/e3-manager-service/src/test/java/cn/e3mall/publish/TestPublish.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
@@ -11,7 +11,7 @@
 <stringAttribute key="org.eclipse.jdt.junit.TESTNAME" value="publishService"/>
 <stringAttribute key="org.eclipse.jdt.junit.TEST_KIND" value="org.eclipse.jdt.junit.loader.junit4"/>
 <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="e3.e3mall.publish.TestPublish"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="cn.e3mall.publish.TestPublish"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="e3-manager-service"/>
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=""/>
