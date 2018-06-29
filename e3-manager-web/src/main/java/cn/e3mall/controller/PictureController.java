@@ -33,8 +33,8 @@ public class PictureController {
 	//@RequestMapping(value="/pic/upload", produces=MediaType.TEXT_PLAIN_VALUE+";charset=utf-8")
 	
 	@RequestMapping("/pic/upload")
-	@ResponseBody//意义:直接响应游览器,不走逻辑视图了,相当于响应response对象调用writer方法,直接往浏览器写返回的内容
-				//不过如果返回值是一个对象的话,就会有一个默认行为,会把对象变成json再响应
+	@ResponseBody//意义:直接响应浏览器,不走逻辑视图了,相当于响应response对象调用writer方法,直接往浏览器写返回的内容
+				//不过如果返回类型是一个对象的话,就会有一个默认行为,会把对象变成json再响应
 	//如果返回值类型是String的话,因为浏览器可以识别,所以不加转换,直接响应.兼容性更好
 //	public Map fileUpload(MultipartFile uploadFile) {//为了兼容性不用Map或者其他类,这个时候响应的类型为application/json
 	public String fileUpload(MultipartFile uploadFile) {//手工转成json字符串,此时响应的类型为Content-Type: text/plain;

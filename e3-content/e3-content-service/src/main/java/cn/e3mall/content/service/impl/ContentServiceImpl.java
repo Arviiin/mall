@@ -60,7 +60,7 @@ public class ContentServiceImpl implements ContentService{
 	 */
 	@Override
 	public List<TbContent> getContentListByCid(long cid) {
-		//查询缓存
+		// 缓存
 		try {
 			//如果缓存中有直接响应结果
 			String json = jedisClient.hget(CONTENT_LIST, cid + "");

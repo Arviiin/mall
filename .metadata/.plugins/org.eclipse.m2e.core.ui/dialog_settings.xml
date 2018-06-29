@@ -9,8 +9,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="e3-search-web"/>
+			<item value="e3-item-web"/>
 			<item value="e3-parent"/>
+			<item value="e3-search-web"/>
 			<item value="e3-search-service"/>
 			<item value="e3-search"/>
 			<item value="e3-search-interface"/>

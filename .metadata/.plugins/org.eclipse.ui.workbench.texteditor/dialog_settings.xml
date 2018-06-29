@@ -2,25 +2,26 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="activemq.version" key="selection"/>
+		<item value="/" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="activemq.version"/>
+			<item value="\"/>
+			<item value="freemarker.version"/>
+			<item value="ItemId"/>
+			<item value="itemId"/>
 			<item value="e3-portal-web"/>
+			<item value="activemq.version"/>
 			<item value="solrj.version"/>
 			<item value="192.168.25.162"/>
-			<item value="jedis.version"/>
-			<item value="insert"/>
-			<item value="contentCategory"/>
-			<item value="ClientGlobal"/>
 		</list>
 		<list key="replacehistory">
+			<item value="/"/>
+			<item value="e3-item-web"/>
 			<item value="e3-search-web"/>
 			<item value="47.98.210.231"/>
-			<item value="/"/>
 			<item value="cn.e3mall"/>
 			<item value=""/>
 			<item value="入云龙"/>
