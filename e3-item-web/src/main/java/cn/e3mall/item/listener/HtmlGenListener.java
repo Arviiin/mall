@@ -66,7 +66,7 @@ public class HtmlGenListener implements MessageListener {
 			//关闭流
 			out.close();
 		} catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 
 	}

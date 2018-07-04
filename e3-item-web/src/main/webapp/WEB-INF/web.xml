@@ -44,6 +44,7 @@
 			<param-value>classpath:spring/*.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
+		<!-- load-on-startup:启动tomcat初始化这个servlet, DispatcherServlet初始化了才能初始化一个Spring容器,不加这句话就不行,就不能监听了-->
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>e3-item-web</servlet-name>

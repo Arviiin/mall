@@ -19,7 +19,7 @@
 	<!-- 提供方应用信息，用于计算依赖关系 -->
 	<dubbo:application name="e3-search" />
 	<dubbo:registry protocol="zookeeper" address="47.98.210.231:2181" />
-	<!-- 用dubbo协议在20880端口暴露服务 不能与manager-service一样,也不能与content-service这里我们改成20882 -->
+	<!-- 用dubbo协议在20880端口暴露服务 不能与manager-service一样,也不能与content-service的20881一样这里我们改成20882 -->
 	<dubbo:protocol name="dubbo" port="20882" />
 	<!-- 声明需要暴露的服务接口        10分钟 -->
 	<dubbo:service interface="cn.e3mall.search.service.SearchItemService" ref="searchItemServiceImpl" timeout="600000"/>

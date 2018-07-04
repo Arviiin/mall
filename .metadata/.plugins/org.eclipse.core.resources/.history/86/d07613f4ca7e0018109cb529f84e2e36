@@ -1,0 +1,17 @@
+package cn.e3mall.sso.controller;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ * 注册功能Controller
+ * <p>Title: RegisterController</p>
+ * <p>Description: </p>
+ * <p>Company: www.my.dhu.edu.cn</p>
+ * @author LongLong
+ * @data 2018年7月3日
+ * @version 1.0
+ */
+@Controller
+public class RegisterController {
+	
+}

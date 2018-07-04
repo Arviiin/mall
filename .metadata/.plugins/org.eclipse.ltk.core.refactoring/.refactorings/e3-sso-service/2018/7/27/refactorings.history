@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;e3-sso-service&apos;&#x0D;&#x0A;- Original project: &apos;e3-sso-service&apos;&#x0D;&#x0A;- Original element: &apos;e3-sso-service/src/main/java/cn.e3mall.sso.service&apos;" description="Delete element" element1="/src\/main\/java&lt;cn.e3mall.sso.service" element2="/src\/main\/java&lt;cn.e3mall.sso" element3="/src\/main\/java&lt;cn.e3mall" element4="/src\/main\/java&lt;cn" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1530625316825" subPackages="false" version="1.0"/>
+</session>

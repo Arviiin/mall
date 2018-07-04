@@ -19,7 +19,6 @@ import freemarker.template.Template;
  * 生成静态页面测试Controller
  * <p>Title: HtmlGenController</p>
  * <p>Description: </p>
- * <p>Company: www.itcast.cn</p> 
  * @version 1.0
  */
 @Controller

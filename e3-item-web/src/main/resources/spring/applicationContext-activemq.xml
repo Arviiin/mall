@@ -38,7 +38,7 @@
 	<bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
 		<property name="connectionFactory" ref="connectionFactory" />
 		<property name="destination" ref="topicDestination" />
-		<property name="messageListener" ref="HtmlGenListener" />
+		<property name="messageListener" ref="htmlGenListener" />
 	</bean>
 	
 </beans>
