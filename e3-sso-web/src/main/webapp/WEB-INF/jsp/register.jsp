@@ -163,7 +163,7 @@
 				});
 	            	
 		},
-		doSubmit:function() {
+		doSubmit:function() {//$("#regForm_mod").serialize()将表单数据序列化(表单数据Controller里一般用pojo接收,注意属性名要一模一样)   function(data)响应的结果,可以返回E3Result
 			$.post("/user/register",$("#regForm_mod").serialize(), function(data){
 				if(data.status == 200){
 					jAlert('用户注册成功，请登录！',"提示", function(){

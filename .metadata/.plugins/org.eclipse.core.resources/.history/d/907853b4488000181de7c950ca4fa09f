@@ -1,0 +1,35 @@
+package cn.e3mall.sso.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+/**
+ * 用户登录处理
+ * <p>Title: LoginController</p>
+ * <p>Description: </p>
+ * <p>Company: www.my.dhu.edu.cn</p>
+ * @author LongLong
+ * @data 2018年7月4日
+ * @version 1.0
+ */
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import cn.e3mall.common.utils.E3Result;
+import cn.e3mall.sso.service.LoginService;
+@Controller
+public class LoginController {
+	
+	@Autowired
+	private LoginService loginService;
+	@RequestMapping("/page/login")
+	public String showLogin(){
+		return "login";
+	}
+	
+	@RequestMapping(value="/user/login", method=RequestMethod.POST)
+	@ResponseBody
+	public E3Result login(String username, String password){//因为参数比较少,这里直接用形参,不用pojo,但注意要与表单里的名字一模一样
+		E3Result e3Result = loginService.userLogin(username, password);//e3Result包含token
+	}
+}

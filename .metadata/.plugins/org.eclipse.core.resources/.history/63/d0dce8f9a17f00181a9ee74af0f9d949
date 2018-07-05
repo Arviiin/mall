@@ -1,0 +1,20 @@
+package cn.e3mall.sso.controller;
+
+import org.springframework.stereotype.Controller;
+/**
+ * 用户登录处理
+ * <p>Title: LoginController</p>
+ * <p>Description: </p>
+ * <p>Company: www.my.dhu.edu.cn</p>
+ * @author LongLong
+ * @data 2018年7月4日
+ * @version 1.0
+ */
+import org.springframework.web.bind.annotation.RequestMapping;
+@Controller
+public class LoginController {
+	@RequestMapping("/page/login")
+	public String showLogin(){
+		return "login";
+	}
+}

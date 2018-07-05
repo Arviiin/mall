@@ -156,11 +156,11 @@
 			}
 		
 	};
-	$(function(){
+	$(function(){//页面加载完成之后会被执行
 		$("#login_sub").click(function(){
 			LOGIN.login();
 		});
 	});
 </script>
-
+</body>
 </html>

@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="REGISTER" key="selection"/>
+		<item value="登录" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="登录"/>
+			<item value="body"/>
 			<item value="REGISTER"/>
 			<item value="e3-portal-web"/>
 			<item value="price"/>
 			<item value="Configuration"/>
 			<item value="configuration"/>
 			<item value="\"/>
-			<item value="freemarker.version"/>
-			<item value="ItemId"/>
 		</list>
 		<list key="replacehistory">
 			<item value="e3-sso-web"/>
