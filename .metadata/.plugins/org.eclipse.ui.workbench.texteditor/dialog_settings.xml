@@ -2,22 +2,23 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="登录" key="selection"/>
+		<item value="commons-lang3.version" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="commons-lang3.version"/>
+			<item value="increment"/>
+			<item value="tSubtotal"/>
+			<item value="cartAdd"/>
+			<item value="e3-item-web"/>
 			<item value="登录"/>
 			<item value="body"/>
 			<item value="REGISTER"/>
-			<item value="e3-portal-web"/>
-			<item value="price"/>
-			<item value="Configuration"/>
-			<item value="configuration"/>
-			<item value="\"/>
 		</list>
 		<list key="replacehistory">
+			<item value="e3-cart-web"/>
 			<item value="e3-sso-web"/>
 			<item value="/"/>
 			<item value="e3-item-web"/>
@@ -25,7 +26,6 @@
 			<item value="47.98.210.231"/>
 			<item value="cn.e3mall"/>
 			<item value=""/>
-			<item value="入云龙"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

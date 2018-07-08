@@ -7,4 +7,5 @@
 <typeInfo handle="=e3-manager-pojo/src\/main\/java&lt;cn.e3mall.pojo{TbItem.java[TbItem" modifiers="1" timestamp="1528904405276"/>
 <typeInfo handle="=e3-item-web/G:\/Code\/JavaEEProject\/repository\/org\/apache\/activemq\/activemq-all\/5.11.2\/activemq-all-5.11.2.jar&lt;javax.jms(MessageListener.class[MessageListener" modifiers="1537" timestamp="1463412213137"/>
 <typeInfo handle="=e3-sso-interface/src\/main\/java&lt;cn.e3mall.sso.service{TokenService.java[TokenService" modifiers="513" timestamp="1530793369402"/>
+<typeInfo handle="=e3-cart-interface/src\/main\/java&lt;cn.e3mall.cart.service{CartService.java[CartService" modifiers="513" timestamp="1531036445990"/>
 </typeInfoHistroy>

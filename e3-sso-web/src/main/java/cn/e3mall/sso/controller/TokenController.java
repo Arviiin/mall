@@ -47,7 +47,7 @@ public class TokenController {
 	
 	//高级写法  spring4.1以后支持
 		@RequestMapping("/user/token/{token}")
-		@ResponseBody
+		@ResponseBody							//一个从路径中取,一个从参数取
 		public Object getUserByToken(@PathVariable String token, String callback){
 			E3Result e3Result = tokenService.getUserByToken(token);
 			//响应结果之前,判断是否为jsonp请求

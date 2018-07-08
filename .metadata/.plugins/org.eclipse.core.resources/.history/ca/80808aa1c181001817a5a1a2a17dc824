@@ -1,0 +1,29 @@
+package cn.e3mall.cart.service.impl;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import cn.e3mall.cart.service.CartService;
+import cn.e3mall.common.utils.E3Result;
+
+/**
+ * 购物车处理服务
+ * <p>Title: CartServiceImpl</p>
+ * <p>Description: </p>
+ * <p>Company: www.my.dhu.edu.cn</p>
+ * @author LongLong
+ * @data 2018年7月7日
+ * @version 1.0
+ */
+@Service
+public class CartServiceImpl implements CartService {
+
+	@Value("${REDIS_CART_PRE}")
+	private String REDIS_CART_PRE;
+	@Override
+	public E3Result addCart(long userId, long itemId, int num) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
