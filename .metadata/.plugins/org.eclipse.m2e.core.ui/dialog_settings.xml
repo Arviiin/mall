@@ -9,21 +9,11 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="e3-cart-web"/>
+			<item value="e3-order-web"/>
 			<item value="e3-parent"/>
-			<item value="e3-cart-service"/>
-			<item value="e3-cart"/>
-			<item value="e3-cart-interface"/>
-			<item value="e3-sso-web"/>
-			<item value="e3-sso-service"/>
-			<item value="e3-sso"/>
-			<item value="e3-sso-interface"/>
-			<item value="e3-item-web"/>
-			<item value="e3-search-web"/>
-			<item value="e3-search-service"/>
-			<item value="e3-search"/>
-			<item value="e3-search-interface"/>
-			<item value="e3-content-interface"/>
+			<item value="e3-order-service"/>
+			<item value="e3-order"/>
+			<item value="e3-order-interface"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -86,6 +76,8 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="e3-order-service"/>
+			<item value="e3-order-interface"/>
 			<item value="e3-cart-service"/>
 			<item value="e3-cart-interface"/>
 			<item value="e3-sso-service"/>
@@ -99,7 +91,6 @@
 			<item value="e3-manager-interface"/>
 			<item value="e3-manager-dao"/>
 			<item value="e3-manager-pojo"/>
-			<item value="taotao-manager-interface"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -112,6 +103,9 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="G:\Code\JavaEEProject\e3-order"/>
+			<item value="G:\Code\JavaEEProject\e3-search\e3-search-interface"/>
+			<item value="G:\Code\JavaEEProject\e3-cart-web"/>
 			<item value="G:\Code\JavaEEProject\e3-cart\e3-cart-interface"/>
 			<item value="G:\Code\JavaEEProject\e3-manager\e3-manager-service"/>
 			<item value="G:\Code\JavaEEProject\e3-search\e3-search-service"/>

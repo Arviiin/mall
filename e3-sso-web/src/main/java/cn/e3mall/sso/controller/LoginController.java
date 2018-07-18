@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 /**
  * 用户登录处理
  * <p>Title: LoginController</p>
@@ -33,7 +34,8 @@ public class LoginController {
 	private String TOKEN_KEY;
 	
 	@RequestMapping("/page/login")
-	public String showLogin(){
+	public String showLogin(String redirect, Model model){//请求的参数即是?后面的
+		model.addAttribute("redirect",redirect);
 		return "login";
 	}
 	
