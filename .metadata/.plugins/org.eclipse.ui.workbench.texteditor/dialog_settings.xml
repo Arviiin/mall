@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="segment" key="selection"/>
+		<item value="totalPrice" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="totalPrice"/>
+			<item value="payment"/>
+			<item value="Payment"/>
+			<item value="create.html"/>
+			<item value="e3.portal-web"/>
 			<item value="Segment"/>
 			<item value="购物车"/>
 			<item value="$"/>
-			<item value="请登录"/>
-			<item value="e3-portal-web"/>
-			<item value="commons-lang3.version"/>
-			<item value="increment"/>
-			<item value="tSubtotal"/>
 		</list>
 		<list key="replacehistory">
 			<item value="e3-order-web"/>
@@ -32,7 +32,7 @@
 		<item value="325" key="DIALOG_WIDTH"/>
 		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 		<item value="444" key="DIALOG_HEIGHT"/>
-		<item value="174" key="DIALOG_Y_ORIGIN"/>
-		<item value="1081" key="DIALOG_X_ORIGIN"/>
+		<item value="501" key="DIALOG_Y_ORIGIN"/>
+		<item value="912" key="DIALOG_X_ORIGIN"/>
 	</section>
 </section>
